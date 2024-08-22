@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Linkage for css-->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <title>Tip Calculator</title>
+
+</head>
+<body>
+    
+    <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 mt-5">
+                        <h3 class="main-heading">Easily calculate the tip and total amount per person.</h3>
+                        <p>
+                            <img src="../image/bill-image.svg" alt="Image" class="img-fluid">
+                        </p>
+                    </div>
+                    <div class="col-md-6 mt-5">
+                    <P class="tipQuote">Simply enter your bill amount, select a tip percentage, and see the results instantly!</P>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <input type="number" class="form-control" name="bamount" id="billAmount" placeholder="Enter Your Bill Amount" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mt-4 form-group">
+                                <input type="number" class="form-control" name="tPercentage" id="tipPercentage" placeholder="Enter Tip Percentage" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mt-4 form-group">
+                                <input type="number" class="form-control" name="nPeople" id="numberPeople" placeholder="Enter Number of People" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mt-4 form-group">
+                                <button class="btn btn-dark rounded-0 py-2 px-4" id="CalculateTip">Calculate Tip</button>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div id="result">
+                                <p id="tipAmount">Tip Amount (per person): $0.00</p>
+                                <p id="totalAmount">Total Amount (per person): $0.00</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Linkage for Javascript-->
+    <script src="../javascript/bootstrap.js"></script>
+    <script src="../javascript/tipcalculator.js"></script>
+</body>
+</html>
